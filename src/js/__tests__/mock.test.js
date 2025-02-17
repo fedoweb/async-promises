@@ -1,3 +1,5 @@
+
+
 import GameSavingLoader from '../GameSavingLoader';
 import read from '../reader';
 import json from '../parser';
@@ -24,4 +26,4 @@ describe('GameSavingLoader - testing with mocks', () => {
       await expect(loader.load()).rejects.toThrow('Ошибка парсинга');
     });
   });
-  
+ 
