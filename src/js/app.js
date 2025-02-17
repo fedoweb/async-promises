@@ -1,13 +1,10 @@
-// TODO: write your code here
-import parser from './parser';
-import reader from './reader';
 import GameSavingLoader from './GameSavingLoader';
 
-console.log(parser, reader, GameSavingLoader);
+const test = new GameSavingLoader();
 
-GameSavingLoader.load().then((saving) => {
-    // saving объект класса GameSaving
-  }, (error) => {
-    // ...
-  });
+test.load().then((saving) => {
+  console.log(saving);
+}, (error) => {
+  console.log(error);
+});
 
